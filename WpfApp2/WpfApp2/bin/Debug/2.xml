@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="mytable" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="mytable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PID" type="xs:int" minOccurs="0" />
+                <xs:element name="SignalName" type="xs:string" minOccurs="0" />
+                <xs:element name="NrBytes" type="xs:int" minOccurs="0" />
+                <xs:element name="Offset" type="xs:int" minOccurs="0" />
+                <xs:element name="Scaling" type="xs:float" minOccurs="0" />
+                <xs:element name="Uint" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <mytable>
+    <PID>13</PID>
+    <SignalName>VehSpeed</SignalName>
+    <NrBytes>2</NrBytes>
+    <Offset>50</Offset>
+    <Scaling>1</Scaling>
+    <Uint>km/h</Uint>
+  </mytable>
+  <mytable>
+    <PID>14</PID>
+    <SignalName>DrvTqr</SignalName>
+    <NrBytes>2</NrBytes>
+    <Offset>50</Offset>
+    <Scaling>0.1</Scaling>
+    <Uint>nm</Uint>
+  </mytable>
+  <mytable>
+    <PID>13</PID>
+    <SignalName>waterTemperater</SignalName>
+    <NrBytes>2</NrBytes>
+    <Offset>50</Offset>
+    <Scaling>0.25</Scaling>
+    <Uint>℃</Uint>
+  </mytable>
+</NewDataSet>
